@@ -4,9 +4,9 @@ function App() {
 
   return (
     <>
-    <h1>
-      Bmi Calulator
-    </h1>
+      <div className='bg-white w-96 p-8 mx-auto my-36 text-center'>
+        <h1 className='text-black text-2xl font-semibold'>BMI Calculator</h1>
+      </div>
     </>
   )
 }
