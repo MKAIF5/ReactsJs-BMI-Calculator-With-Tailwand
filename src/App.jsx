@@ -22,7 +22,10 @@ function App() {
             className='border-2 border-black p-1 w-80 rounded-lg'
             type="number" name="" id="" placeholder='Enter Height Value' />
         </div>
-      </div>
+        <br />
+          <button className='bg-blue-600 text-white p-3 w-80 rounded-md'>Submit</button>
+          <button className='bg-gray-300 text-black p-3 w-80 rounded-md mt-1 border border-black'>Reload</button>
+        </div>
     </>
   )
 }
