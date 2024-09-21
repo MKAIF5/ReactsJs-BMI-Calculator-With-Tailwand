@@ -1,6 +1,12 @@
+import { useState } from 'react'
 import './App.css'
 
 function App() {
+
+  const [weight, setWeight] = useState(0);
+  const [height, setHeight] = useState(0);
+  const [bmi , setBmi] = useState("");
+  const [message , setMessage] = useState("");
 
   return (
     <>
@@ -16,6 +22,7 @@ function App() {
             type="number"
             value={weight}
             placeholder='Enter Weight Value'
+            onChange={(e) => setWeight(e.target.value)}
           />
         </div>
 
@@ -33,7 +40,7 @@ function App() {
         <button onClick={reload} className='bg-gray-300 text-black p-3 w-80 rounded-md mt-2 border border-black'>Reload</button>
         <br /><br />
         <p className='text-xl font-semibold text-center text-gray-800'>Your Bmi Is : {bmi}</p>
-        <p className='text-xl font-semibold text-center text-gray-800'>{message} </p>
+        <p className='text-xl font-semibold text-center text-gray-800'>{message}</p>
       </div>
     </>
   )
