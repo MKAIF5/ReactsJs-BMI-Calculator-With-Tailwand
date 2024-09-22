@@ -31,9 +31,9 @@ function App() {
   }
 
 
-// const reload  = () =>{
-//   window.location.reload()
-// }
+const reload  = () =>{
+  window.location.reload()
+}
 
 
 
