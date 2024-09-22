@@ -25,7 +25,6 @@ function App() {
             onChange={(e) => setWeight(e.target.value)}
           />
         </div>
-
         <div className='leading-9'>
           <label className='text-sm'>Height (In)</label><br />
           <input
