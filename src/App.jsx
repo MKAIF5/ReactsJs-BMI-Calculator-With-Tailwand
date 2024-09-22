@@ -30,6 +30,13 @@ function App() {
     }
   }
 
+
+// const reload  = () =>{
+//   window.location.reload()
+// }
+
+
+
   return (
     <>
       <div className='bg-white w-96 p-8 mx-auto my-36'>
