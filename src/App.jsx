@@ -8,6 +8,13 @@ function App() {
   const [bmi, setBmi] = useState("");
   const [message, setMessage] = useState("");
 
+
+  const calcBmi = (e) =>{
+    if(weight === 0 || height === 0){
+      alert("Please Enter A Valid Weight And Height")
+    }
+  }
+
   return (
     <>
       <div className='bg-white w-96 p-8 mx-auto my-36'>
@@ -23,7 +30,7 @@ function App() {
             value={weight}
             placeholder='Enter Weight Value'
             onChange={(e) => setWeight(e.target.value)}
-          />
+            />
         </div>
         <div className='leading-9'>
           <label className='text-sm'>Height (In)</label><br />
@@ -33,10 +40,10 @@ function App() {
             value={height}
             placeholder='Enter Height Value'
             onChange={(e) => setHeight(e.target.value)}
-          />
+            />
         </div>
         <br />
-        <button type='submit' className='bg-blue-600 text-white p-3 w-80 rounded-md'>Submit</button>
+        <button onClick={calcBmi} type='submit' className='bg-blue-600 text-white p-3 w-80 rounded-md'>Submit</button>
         <button onClick={reload} className='bg-gray-300 text-black p-3 w-80 rounded-md mt-2 border border-black'>Reload</button>
         <br /><br />
         <p className='text-xl font-semibold text-center text-gray-800'>Your Bmi Is : {bmi}</p>
