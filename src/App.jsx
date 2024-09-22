@@ -32,6 +32,7 @@ function App() {
             type="number"
             value={height}
             placeholder='Enter Height Value'
+            onChange={(e) => setHeight(e.target.value)}
           />
         </div>
         <br />
